@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@408&family=Outfit:wght@100&family=Poppins:wght@200&family=Roboto+Mono:wght@500&family=Roboto:wght@500&display=swap');
+html,body{
+    height: 100%;
+    background: #fafafa;
+    color: #4f5063;
+    font-size: 15px;
+    line-height: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+* {
+    box-sizing: border-box;
+}
+*,*::before,*::after{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+._container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1140px;
+    margin: 2% auto;
+}
+
+.header {}
+.header_container{}
+.header-block {
+    margin: 25px 0;
+}
+.header-block_title {
+    margin: 25px;
+    text-align: center;
+    color: #9d9ca0;
+    font-weight: 600;
+}
+.header-block_title:nth-child(odd){
+    text-align: center;
+    color: #4d5060;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+.header-block_text{
+    text-align: center;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.body_container
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    margin: 15px;
+    width: 350px;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 5%), 0 6px 6px rgb(0 0 0 / 10%);
+}
+.card::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    content: '';
+}
+
+._container.card::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    content: '';
+}
+.card img {
+    display: block;
+    margin-left: auto;
+    padding-top: 20px;
+}
+.green_card::after {
+    background: #45d2d2;
+}
+.red_card::after {
+    background: #eb5454;
+}
+.blue_card::after {
+    background: #539eef;
+}
+.orange_card::after{
+    background: #fcae4b;
+}
+.side {
+    transform: translateY(50%);
+}
+
+@media (max-width:1124px){
+    .side{
+        transform: translateY(0%)
+    }
+}
